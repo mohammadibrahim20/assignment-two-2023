@@ -205,9 +205,6 @@
 
 .service-container{
     margin: 10px 240px 180px 240px;
-    /* margin-left: 240px;
-    margin-right: 240px;
-    margin-bottom: 180px; */
     display: flex;
     flex-direction: column;
 
@@ -504,5 +501,24 @@ li a {
         border-radius: 5px;
         background-color: #faf8f8;
         box-shadow: .5px .5px 4px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    /* botton */
+    .btn-two{
+        padding: 10px 10px;
+        /* background-color: #FF900E; */
+        Font-size: 16px;
+        /* font-weight: 500;
+        color: #FFFFFF; */
+        /* border: none;
+        border-radius: 7px;
+        position: relative;
+        left: -50px;
+        top: -140px; */
+        left: 20px;
+        top: -50px;
+    }
+    #year{
+        font-size: 25px;
     }
 }
