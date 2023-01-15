@@ -103,7 +103,6 @@
 .feuture-container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     padding: 85px 300px;
 }
@@ -141,6 +140,22 @@
 }
 
 /* Skill */
+.btn-two{
+    padding: 45px 42px;
+    background-color: #FF900E;
+    Font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    position: relative;
+    left: -50px;
+    top: -140px;
+}
+#year{
+    font-size: 65px;
+}
+
 
 .skill-container{
     display: flex;
@@ -189,7 +204,7 @@
 /* Achivement Container Start  */
 
 .service-container{
-    margin-top: 130px;
+    margin-top: 10px;
     margin-left: 240px;
     margin-right: 240px;
     margin-bottom: 180px;
