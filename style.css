@@ -290,8 +290,37 @@ footer{
     
 }
 
+/* -----------------------------------------------------
+bonus------------------------------------------------- */
 
+.team-container{
+    margin: 10px 240px; 
 
+    
+}
+.our-member >h3{
+    text-align: center;
+}
+.team-img-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.team-img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid #FF900E;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #faf8f8;
+    box-shadow: .5px .5px 4px 6px rgba(0, 0, 0, 0.06);
+}
+.team-img img{
+    width: 50%;
+}
 /* Media Queries */
 
 @media screen and (max-width: 576px) {
@@ -379,8 +408,7 @@ li a {
     }
 /* skill */
     .skill-container{
-        /* padding-left: 10px;
-        padding-right: 10px; */
+        
         flex-direction: column;
         margin: 10px;
         
@@ -400,10 +428,19 @@ li a {
         padding: 15px 10px;
     }
     .arcitect-img{
-        width: 100%;
-        padding: 10px;
-        overflow: hidden;
+        height: 777px;
+        width: 560px;
+        
+        /* padding: 10px; */
+        /* overflow: hidden; */
         position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .arcitect-img> img{
+        height: 520px;
+        width: 100%;
     }
     .btn-two{
         align-items: center;
@@ -443,5 +480,29 @@ li a {
         Font-size: 30px;
         color: #131313;
     }
-    
+    /* Our member */
+    .team-container{
+        margin: 10px 10px; 
+       
+    }
+    .our-member >h3{
+        font-weight: 600;
+        Font-size: 30px;
+        color: #131313;
+    }
+    .team-img-container{
+       
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        padding: 40px 20px;
+    }
+    .team-img{
+        
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #faf8f8;
+        box-shadow: .5px .5px 4px 6px rgba(0, 0, 0, 0.06);
+    }
 }
