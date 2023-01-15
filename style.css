@@ -7,9 +7,7 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
-.nav-container{
-    
-}
+
 .common-titile{
     font-weight: 800;
     Font-size: 45px;
@@ -43,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 50px 240px 0 228px;
+    padding: 50px 240px 0 240px;
 
 }
 .nav-list ul{
@@ -184,11 +182,13 @@
     padding: 30px 42px 30px 30px;
 
 }
-
-.header-two{
-
+.skill-info> h3{
+    border-left: 5px solid #FF900E;
 }
 
+.skill-info>p{
+    padding-right: 50px;
+}
 .skill-paragraph{
     color: #727272;
     font-size: 16px;
@@ -204,10 +204,10 @@
 /* Achivement Container Start  */
 
 .service-container{
-    margin-top: 10px;
-    margin-left: 240px;
+    margin: 10px 240px 180px 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
-    margin-bottom: 180px;
+    margin-bottom: 180px; */
     display: flex;
     flex-direction: column;
 
@@ -227,7 +227,16 @@
     width: 240px;
     padding: 45px 35px;
 }
-
+.achivement-box:hover{
+    border: 2px solid #727272;
+    border-radius: 7px;
+    background-color: #FF900E;
+    transform: scale(1.1);
+    margin: 10px;
+    height: 240px;
+    width: 240px;
+    padding: 45px 35px;
+}
 .achivement-head{
     color: #424242;
     font-size: 45px;
@@ -278,5 +287,161 @@ footer{
     height: 100px;
     padding-top: 38px;
     background-color: #FFF4E7;
+    
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px) {
+
+    .common-titile{
+        padding-bottom: 23px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .nav-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 20px 10px;
+}
+    .nav-list{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+ 
+    
+    }
+    .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+    .nav-list ul li {
+    padding: 10px 10px;
+    background-color: white;
+    margin-top: 5px;
+}
+    
+li a {
+    display: block;
+    width: 100%x;
+    color: #131313;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: lightseagreen;
+    text-align: center;
+
+  }
+  /* Banner */
+  .banner-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.banner-title{
+    font-size: 45px;
+    color: #131313;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.banner-img{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    overflow: none;
+    object-fit: cover;
+}
+.banner-img img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+
+}
+/* feuture */
+    .feuture-container{
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .feuture-description{
+        padding: 10px; 
+    }
+    .img-gallary{
+        grid-template-columns: repeat(1, 1fr);
+    }
+/* skill */
+    .skill-container{
+        /* padding-left: 10px;
+        padding-right: 10px; */
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+    .skill-info{
+        width: 100%;
+        margin-left: 0;
+        object-fit: cover;
+        
+    }
+    .skill-list{
+        padding-right: 0;   
+    }
+
+    .skill-item{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .arcitect-img{
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+        position: center;
+    }
+    .btn-two{
+        align-items: center;
+        left: 50px;
+        top: -140px;
+    }
+    /* Achivement */
+    .service-container{
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .our-achivement{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-container{
+        width: 100%;
+
+    }
+/* Sponsor */
+    .sponsor-container{
+        margin: 10px;
+    }
+    .logo-container{
+        
+        justify-content: center;
+        align-items: center
+    }
+    /* Footer */
+    footer{
+        margin: 15px;
+    }
+
+    /* common */
+    .common-titile{
+        font-weight: 600;
+        Font-size: 30px;
+        color: #131313;
+    }
     
 }
